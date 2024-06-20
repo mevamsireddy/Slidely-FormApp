@@ -21,7 +21,7 @@ This is a simple Express server made with TypeScript that handles form submissio
     
     The server will run on `http://localhost:3000`
 
-## Running the Server
+## Project structure
 ```bash
 /backend/
 ├── src/
