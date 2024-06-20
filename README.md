@@ -17,24 +17,25 @@ Welcome to the FormApp repository! This project is a Windows desktop application
 
 ## Project Stucture
 /FormApp/
-├── FormApp/
-│   ├── Form1.vb
-│   ├── FormViewSubmissions.vb
-│   ├── FormCreateSubmission.vb
-│   ├── ... (other form files)
-│   ├── FormApp.sln
-│   └── ... (other solution files)
-└── backend/
-    ├── src/
-    │   ├── routes/
-    │   │   ├── submissions.ts
-    │   ├── app.ts
-    │   ├── server.ts
-    ├── db.json
-    ├── .gitignore
-    ├── package.json
-    ├── tsconfig.json
-    └── README.md
+├── FormApp/                # Windows Desktop App
+│   ├── Form1.vb            # Main form for application
+│   ├── FormViewSubmissions.vb  # Form for viewing submissions
+│   ├── FormCreateSubmission.vb  # Form for creating new submissions
+│   ├── ...                 # Other form files and related code
+│   ├── FormApp.sln         # Visual Studio solution file
+│   └── ...                 # Other solution files
+└── backend/                 # Backend Server
+    ├── src/                # Source directory
+    │   ├── routes/         # Route handlers
+    │   │   ├── submissions.ts  # Route handling submission endpoints
+    │   ├── app.ts          # Main application logic
+    │   ├── server.ts       # Express server setup
+    ├── db.json             # JSON file for storing submissions (mock database)
+    ├── .gitignore          # Git ignore file
+    ├── package.json        # Node.js dependencies
+    ├── tsconfig.json       # TypeScript configuration
+    └── README.md           # Backend README file
+
 
 ## Installation Instructions
 
