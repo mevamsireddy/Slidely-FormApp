@@ -44,18 +44,22 @@ Welcome to the FormApp repository! This project is a Windows desktop application
 1. **Clone the Repository**:
 - GitHub `https://github.com/mevamsireddy/Slidely-FormApp.git`
 
+
 2. **Open in Visual Studio**:
 - Open Visual Studio.
 - Navigate to `File` -> `Open` -> `Project/Solution`.
 - Select the `FormApp.sln` file in the root directory of the repository.
 
+
 3. **Restore NuGet Packages**:
 - Once the project is loaded in Visual Studio, right-click on the solution in the Solution Explorer.
 - Select `Restore NuGet Packages` to ensure all dependencies are installed.
 
+
 4. **Build and Run**:
 - Build the solution (`Ctrl+Shift+B` or `Build` -> `Build Solution`).
 - Run the application (`F5` or `Debug` -> `Start Debugging`).
+
 
 ## Usage
 
