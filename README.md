@@ -11,31 +11,33 @@ Welcome to the FormApp repository! This project is a Windows desktop application
 
 ## Screenshots
 
-![Screenshot 1](screenshots\FormApp.png)
-![Screenshot 2](screenshots\ViewSubmissions.png)
-![Screenshot 3](screenshots\CreateSubmissions.png)
+![Screenshot 1](screenshots/FormApp.png)
+![Screenshot 2](screenshots/ViewSubmissions.png)
+![Screenshot 3](screenshots/CreateSubmissions.png)
 
 ## Project Stucture
+```bash
 /FormApp/
-├── FormApp/                # Windows Desktop App
-│   ├── Form1.vb            # Main form for application
-│   ├── FormViewSubmissions.vb  # Form for viewing submissions
-│   ├── FormCreateSubmission.vb  # Form for creating new submissions
-│   ├── ...                 # Other form files and related code
-│   ├── FormApp.sln         # Visual Studio solution file
-│   └── ...                 # Other solution files
-└── backend/                 # Backend Server
-    ├── src/                # Source directory
-    │   ├── routes/         # Route handlers
-    │   │   ├── submissions.ts  # Route handling submission endpoints
-    │   ├── app.ts          # Main application logic
-    │   ├── server.ts       # Express server setup
-    ├── db.json             # JSON file for storing submissions (mock database)
-    ├── .gitignore          # Git ignore file
-    ├── package.json        # Node.js dependencies
-    ├── tsconfig.json       # TypeScript configuration
-    └── README.md           # Backend README file
+├── FormApp/
+│   ├── Form1.vb                    # Main form for application
+│   ├── FormViewSubmissions.vb      # Form for viewing submissions
+│   ├── FormCreateSubmission.vb     # Form for creating new submissions
+│   ├── ...                         # Other form files and related code
+│   ├── FormApp.sln                 # Visual Studio solution file
+│   └── ...                         # Other solution files
 
+/backend/
+├── src/
+│   ├── routes/
+│   │   ├── submissions.ts          # Route handling submission endpoints
+│   ├── app.ts                      # Main application logic
+│   ├── server.ts                   # Express server setup
+├── db.json                         # JSON file for storing submissions (mock database)
+├── .gitignore                      # Git ignore file
+├── package.json                    # Node.js dependencies
+├── tsconfig.json                   # TypeScript configuration
+└── README.md                       # Backend README file
+```
 
 ## Installation Instructions
 
@@ -57,14 +59,14 @@ Welcome to the FormApp repository! This project is a Windows desktop application
 
 ## Usage
 
-- **Creating New Submissions**:
+1. **Creating New Submissions**:
 - Click on the "Create New Submission" button or press `Ctrl + N` to open the form.
 - Fill in the required fields (name, email, phone, GitHub link, stopwatch time).
 - Click "Submit" or press `Ctrl + S` to send the data to the backend server.
 
-- **Viewing Submissions**:
+2. **Viewing Submissions**:
 - Click on the "View Submissions" button or press `Ctrl + V` to navigate through existing submissions.
 - Use `Ctrl + P` for previous and `Ctrl + N` for next to cycle through submissions.
 
-- **Toggle Stopwatch**:
+3. **Toggle Stopwatch**:
 - In the submission form (`FormCreateSubmission`), click "Toggle Stopwatch" or press `Ctrl + T` to start or pause the stopwatch.
