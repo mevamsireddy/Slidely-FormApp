@@ -25,9 +25,11 @@ Partial Class Form1
         Me.btnViewSubmissions = New System.Windows.Forms.Button()
         Me.btnCreateNewSubmission = New System.Windows.Forms.Button()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -73,9 +75,21 @@ Partial Class Form1
         '
         Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.White
         Me.SplitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.SplitContainer1.Panel2.Controls.Add(Me.ListBox1)
         Me.SplitContainer1.Size = New System.Drawing.Size(2377, 1068)
         Me.SplitContainer1.SplitterDistance = 792
         Me.SplitContainer1.TabIndex = 3
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 25
+        Me.ListBox1.Items.AddRange(New Object() {"         Keyboard Shortcut        ", "-------------------------------------------------", "FormView", "CTRL+V - View Submissions", "CTRL+N - Create Submission", "", "ViewSubmissions", "CTRL+P - Previous", "CTRL+N - Next", "", "CreateSubmissions", "CTRL+T - Toggle Stopwatch", "CTRL+S - Submit"})
+        Me.ListBox1.Location = New System.Drawing.Point(1271, 724)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(297, 329)
+        Me.ListBox1.TabIndex = 5
+        Me.ListBox1.Visible = False
         '
         'Label1
         '
@@ -104,6 +118,7 @@ Partial Class Form1
         Me.Text = "FormApp"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -115,4 +130,5 @@ Partial Class Form1
     Friend WithEvents btnCreateNewSubmission As Button
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents Label1 As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class

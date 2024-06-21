@@ -37,6 +37,7 @@ Partial Class FormCreateSubmission
         Me.btnToggleStopwatch = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'txtGitHubLink
@@ -195,6 +196,17 @@ Partial Class FormCreateSubmission
         Me.TextBox1.Size = New System.Drawing.Size(360, 50)
         Me.TextBox1.TabIndex = 28
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 25
+        Me.ListBox1.Items.AddRange(New Object() {"         Keyboard Shortcut        ", "-------------------------------------------------", "CTRL+T - Toggle Stopwatch", "CTRL+S - Submit"})
+        Me.ListBox1.Location = New System.Drawing.Point(1265, 920)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(297, 104)
+        Me.ListBox1.TabIndex = 30
+        Me.ListBox1.Visible = False
+        '
         'FormCreateSubmission
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -202,6 +214,7 @@ Partial Class FormCreateSubmission
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1414, 1009)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblStopwatchTime)
         Me.Controls.Add(Me.btnToggleStopwatch)
@@ -237,4 +250,5 @@ Partial Class FormCreateSubmission
     Friend WithEvents btnToggleStopwatch As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents ListBox1 As ListBox
 End Class

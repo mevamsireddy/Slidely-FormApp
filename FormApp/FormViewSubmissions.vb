@@ -6,9 +6,11 @@ Public Class FormViewSubmissions
     Private submissions As List(Of Submission)
     Private currentIndex As Integer = 0
     Private httpClient As HttpClient = New HttpClient()
+    Private WithEvents Timer1 As New Timer()
 
     Private Async Sub FormViewSubmissions_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.KeyPreview = True ' To capture key events
+        Timer1.Interval = 5000 ' 5 seconds
         Await LoadSubmissions()
         DisplaySubmission(currentIndex)
     End Sub
@@ -61,6 +63,28 @@ Public Class FormViewSubmissions
         ' Handle Ctrl + N for Next
         If e.Control AndAlso e.KeyCode = Keys.N Then
             btnNext.PerformClick()
+        End If
+
+        ' Handle Ctrl + H to show ListBox1
+        If e.Control AndAlso e.KeyCode = Keys.H Then
+            ListBox1.Visible = True
+            Timer1.Start()
+        End If
+    End Sub
+
+    ' Timer tick event to hide ListBox1
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ListBox1.Visible = False
+        Timer1.Stop()
+    End Sub
+
+    ' Right-click event to hide ListBox1
+    Private Sub FormViewSubmissions_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        If e.Button = MouseButtons.Right Then
+            ListBox1.Visible = False
+        End If
+        If e.Button = MouseButtons.Left Then
+            ListBox1.Visible = False
         End If
     End Sub
 

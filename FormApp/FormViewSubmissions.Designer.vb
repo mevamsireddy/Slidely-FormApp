@@ -35,6 +35,7 @@ Partial Class FormViewSubmissions
         Me.txtGitHubLink = New System.Windows.Forms.TextBox()
         Me.txtStopwatchTime = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -182,12 +183,24 @@ Partial Class FormViewSubmissions
         Me.Label6.Text = "View Submissions"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 25
+        Me.ListBox1.Items.AddRange(New Object() {"         Keyboard Shortcut        ", "-------------------------------------------------", "CTRL+P - Previous", "CTRL+N - Next"})
+        Me.ListBox1.Location = New System.Drawing.Point(1267, 919)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(297, 104)
+        Me.ListBox1.TabIndex = 29
+        Me.ListBox1.Visible = False
+        '
         'FormViewSubmissions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1414, 1009)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtStopwatchTime)
         Me.Controls.Add(Me.txtGitHubLink)
@@ -222,4 +235,5 @@ Partial Class FormViewSubmissions
     Friend WithEvents txtGitHubLink As TextBox
     Friend WithEvents txtStopwatchTime As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class

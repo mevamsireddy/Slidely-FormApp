@@ -48,6 +48,13 @@
       "phone": "8889990000",
       "github_link": "http://github.com/susanlee",
       "stopwatch_time": "00:08:30"
+    },
+    {
+      "name": "silo",
+      "email": "sillo123@example.com",
+      "phone": "9999990000",
+      "github_link": "https://github.com/silo",
+      "stopwatch_time": "00:01:10"
     }
   ]
 }

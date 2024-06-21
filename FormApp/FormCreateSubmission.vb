@@ -92,6 +92,21 @@ Public Class FormCreateSubmission
         If e.Control AndAlso e.KeyCode = Keys.S Then
             btnSubmit.PerformClick()
         End If
+
+        ' Handle Ctrl + H to show ListBox1
+        If e.Control AndAlso e.KeyCode = Keys.H Then
+            ListBox1.Visible = True
+        End If
+    End Sub
+
+    ' Right-click event to hide ListBox1
+    Private Sub FormCreateSubmission_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        If e.Button = MouseButtons.Right Then
+            ListBox1.Visible = False
+        End If
+        If e.Button = MouseButtons.Left Then
+            ListBox1.Visible = False
+        End If
     End Sub
 
     ' Event handlers for text box changes, if needed

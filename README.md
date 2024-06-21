@@ -7,7 +7,7 @@ Welcome to the FormApp repository! This project is a Windows desktop application
 - **Create New Submissions**: Easily create new form submissions with fields for name, email, phone, GitHub link, and stopwatch time.
 - **View Submissions**: Navigate through existing submissions.
 - **Error Handling**: Robust client-side validation and error messages ensure data integrity and user feedback.
-- **Keyboard Shortcuts**: Efficiently navigate and interact with the application using keyboard shortcuts for common actions.
+- **Keyboard Shortcuts**: Efficiently navigate and interact with the application using keyboard shortcuts for common actions. Press `Ctrl + H` to show the list of keyboard shortcuts.
 
 ## Screenshots
 
